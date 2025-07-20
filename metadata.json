@@ -1,0 +1,5 @@
+{
+  "name": "CogniFlow: AI Workflow Orchestrator",
+  "description": "A visual drag-and-drop interface to design, orchestrate, and run complex AI workflows. Supports text generation, web search, image generation, and conditional branching. Includes pre-built templates to get started quickly.",
+  "requestFramePermissions": []
+}

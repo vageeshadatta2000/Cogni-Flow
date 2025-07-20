@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CogniFlow: AI Workflow Orchestrator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/reactflow@11.11.3/dist/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --background: #F9FAFB; /* Light gray background */
+        --text-primary: #111827; /* Dark gray for text */
+        --text-secondary: #6B7280; /* Medium gray for secondary text */
+        --border-color: #E5E7EB; /* Light border color */
+        --panel-background: #FFFFFF;
+        --edge-color: #9CA3AF;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--background);
+        color: var(--text-primary);
+        overscroll-behavior: none;
+      }
+      
+      /* Custom scrollbar for light theme */
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: #F1F5F9; }
+      ::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 10px; }
+      ::-webkit-scrollbar-thumb:hover { background: #9CA3AF; }
+
+      /* Edge/Connection Styling */
+      .react-flow__edge-path {
+        stroke: var(--edge-color);
+        stroke-width: 2;
+      }
+      .react-flow__edge.selected .react-flow__edge-path {
+         stroke-width: 3;
+      }
+
+      /* Handle styling for light theme */
+      .react-flow__handle {
+        width: 10px !important;
+        height: 10px !important;
+        background-color: #fff !important;
+        border: 2px solid #9CA3AF !important;
+        transition: all 0.2s ease;
+      }
+      .react-flow__handle:hover {
+        transform: scale(1.2);
+        border-color: #4f46e5 !important;
+      }
+
+      .react-flow__handle-connecting {
+        animation: pulse 1.5s infinite;
+        background-color: #6366f1 !important;
+        border-color: #a5b4fc !important;
+      }
+      
+      .react-flow__handle-valid {
+        background-color: #22c55e !important;
+        border-color: #86efac !important;
+      }
+      
+      @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7); }
+        70% { box-shadow: 0 0 0 10px rgba(99, 102, 241, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.10.0",
+    "reactflow": "https://esm.sh/reactflow@^11.11.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
