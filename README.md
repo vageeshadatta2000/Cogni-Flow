@@ -2,7 +2,8 @@
 
 **CogniFlow is a modern, visual, and interactive web application for designing, orchestrating, and executing complex AI-driven workflows. Built with React and TypeScript, it provides a sleek drag-and-drop interface inspired by professional tools like Stack AI to chain together different processing tasks.**
 
-![CogniFlow UI Screenshot](https://user-images.githubusercontent.com/12345/placeholder.png) <!-- It's recommended to replace this with a new screenshot -->
+
+<img width="1512" height="982" alt="Screenshot" src="https://github.com/user-attachments/assets/835f57c8-5e13-4212-bdc4-909322fe0684" />
 
 ## ✨ Key Features
 
